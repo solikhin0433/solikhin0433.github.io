@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solikhin | Full-Stack Web Developer</title>
+    <meta name="description"
+        content="Portofolio Solikhin, Full-Stack Web Developer berpengalaman dengan Laravel, Express.js, Angular, dan Micro Frontend Architecture.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Solikhin<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-moon-line" id="theme-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <button class="mobile-menu-toggle" aria-label="Open menu">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <p class="greeting">👋 Halo, saya</p>
+                <h1 class="name">Solikhin</h1>
+                <div class="role-wrapper">
+                    <span class="role-static">I am a </span>
+                    <span class="role-typing"></span>
+                </div>
+                <p class="bio-short">
+                    Mahasiswa D-IV Sistem Informasi Bisnis Politeknik Negeri Malang & Web Developer yang passionate
+                    membangun sistem modular, skalabel, dan efisien.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Lihat Project <i class="ri-arrow-right-line"></i></a>
+                    <a href="assets/images/Solikhin_CV.pdf" download class="btn btn-outline">Download CV <i
+                            class="ri-download-line"></i></a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/solikhin0433" target="_blank" aria-label="GitHub"><i
+                            class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/solikhinkhin/" target="_blank" aria-label="LinkedIn"><i
+                            class="ri-linkedin-fill"></i></a>
+                    <a href="mailto:solikhinkhin645@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper fade-in-left">
+                <div class="image-bg-shape"></div>
+                <img src="assets/images/profile.jpeg" alt="Solikhin" class="hero-image">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="ri-arrow-down-s-line"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>About <span>Me</span></h2>
+                <p>Mengenal lebih dekat perjalanan dan pengalaman saya.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <p>
+                        Full-Stack Web Developer dengan pengalaman membangun aplikasi web menggunakan Laravel,
+                        Express.js, dan Angular. Saya sangat antusias dengan arsitektur modern web development.
+                    </p>
+                    <p>
+                        Berpengalaman dalam merancang arsitektur database, membuat middleware API, serta implementasi
+                        Micro Frontend Architecture (MFA) dan Module Federation untuk sistem yang modular.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>3+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>Tech Stacks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>My <span>Skills</span></h2>
+                <p>Teknologi dan tools yang saya gunakan untuk mewujudkan ide menjadi nyata.</p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category fade-in-up">
+                    <h3>Frontend & UI</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>TypeScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Angular</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in-up delay-1">
+                    <h3>Backend & Database</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>PHP</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Laravel</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Express.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in-up delay-2">
+                    <h3>Mobile & Tools</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Flutter</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-wrap">
+                                <div class="progress-line" data-width="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="mt-4">Tools & DevOps</h3>
+                    <div class="skill-badges">
+                        <span class="badge">Git</span>
+                        <span class="badge">GitHub</span>
+                        <span class="badge">GitLab</span>
+                        <span class="badge">CI/CD</span>
+                        <span class="badge">Module Federation</span>
+                        <span class="badge">Node.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Featured <span>Projects</span></h2>
+                <p>Beberapa karya terbaik yang pernah saya bangun.</p>
+            </div>
+
+            <div class="project-grid">
+                <!-- Project Simhaq -->
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="assets/images/simhaq.png" alt="Techtalk">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Project"><i
+                                    class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SIMHAQ (Sistem Monitoring Hafalan Al-Qur'an)</h3>
+                        <p>Sistem informasi berbasis web untuk memantau perkembangan hafalan Al-Qur'an. Dilengkapi dengan fitur unggulan manajemen materi pembelajaran interaktif menggunakan pendekatan gaya belajar VARK (Visual, Auditory, Read/Write, Kinesthetic) dan dashboard monitoring progres hafalan secara real-time.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>Express</span>  
+                            <span>MySQL</span>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 -->
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="assets/images/hrclub.png" alt="HR Club Pasuruan">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Project"><i
+                                    class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Club Pasuruan</h3>
+                        <p>Landing page dan sistem manajemen SDM komunitas HRD di Pasuruan. Memiliki fitur pengelolaan
+                            data personel, administrasi perusahaan, dan sistem iuran.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>Express.js</span>
+                            <span>Mysql</span>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in-up delay-1">
+                    <div class="project-image">
+                        <img src="assets/images/PPID.jpeg" alt="PPID Polinema">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Project"><i
+                                    class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PPID Polinema</h3>
+                        <p>Website Admin PPID (Pejabat Pengelola Informasi dan Dokumentasi). Mendukung CRUD lengkap,
+                            RESTful API integration, dan manajemen konten (Project Magang - UPA TIK).</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-in-up delay-2">
+                    <div class="project-image">
+                        <img src="assets/images/survey.png" alt="Survey Kepuasan">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Project"><i
+                                    class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Survey Kepuasan Pelanggan</h3>
+                        <p>Sistem informasi survey kepuasan pelanggan Polinema. Mendukung multi-responden (Dosen,
+                            Mahasiswa, Alumni, dll) dengan Admin panel (PBL).</p>
+                        <div class="project-tech">
+                            <span>HTML/JS</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="assets/images/kompen-web.png" alt="Kompen JTI">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Project"><i
+                                    class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Kompen JTI - Web</h3>
+                        <p>Sistem informasi kompensasi Jurusan Teknologi Informasi. Terdapat manajemen pekerjaan,
+                            riwayat kompensasi, dan role-based access (PBL).</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card fade-in-up delay-1">
+                    <div class="project-image">
+                        <img src="assets/images/ekompen.png" alt="E-Kompen Mobile">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="View Project"><i
+                                    class="ri-external-link-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Kompen - Mobile</h3>
+                        <p>Versi mobile dari sistem Kompen JTI. Menghadirkan login multi-role, tracking progress
+                            pekerjaan kompensasi, dan notifikasi real-time (PBL).</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>RESTful API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Pengalaman <span>Kerja</span></h2>
+                <p>Perjalanan karier profesional dan pengalaman magang saya.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Juli 2025 - Januari 2026</div>
+                        <h3>Full Stack Developer Intern</h3>
+                        <h4>PT. Amerta Indah Otsuka - Pasuruan</h4>
+                        <p>Mengimplementasikan Microfrontend Architecture (MFA) untuk integrasi platform tersentralisasi, mengembangkan API, meredesain antarmuka pengguna (UI/UX) agar lebih modern, dan setup CI/CD untuk otomatisasi deployment perangkat lunak.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Februari 2025 - Juni 2025</div>
+                        <h3>Backend Developer Intern</h3>
+                        <h4>UPA TIK Politeknik Negeri Malang</h4>
+                        <p>Merancang arsitektur database, mengembangkan API sebagai middleware untuk memastikan komunikasi data antar sistem yang aman, serta membangun fitur CRUD komprehensif pada dashboard admin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>My <span>Education</span></h2>
+                <p>Latar belakang pendidikan formal saya.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Sekarang</div>
+                        <h3>D-IV Sistem Informasi Bisnis</h3>
+                        <h4>Politeknik Negeri Malang</h4>
+                        <p>Mendalami rekayasa perangkat lunak, sistem basis data, arsitektur micro-frontend, dan
+                            pengembangan aplikasi berbasis web & mobile.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in-up delay-1">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Lulus 2022</div>
+                        <h3>Matematika dan Ilmu Pengetahuan Alam (MIPA)</h3>
+                        <h4>SMAN 1 Jogorogo Ngawi</h4>
+                        <p>Mempelajari dasar-dasar logika matematika dan sains yang memperkuat kemampuan problem-solving
+                            dalam pemrograman.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Get In <span>Touch</span></h2>
+                <p>Tertarik untuk bekerja sama atau sekadar menyapa? Jangan ragu untuk menghubungi saya!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in-up">
+                    <div class="contact-card">
+                        <div class="icon-box">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <div>
+                            <h3>Lokasi</h3>
+                            <p>Lowokwaru, Malang, Jawa Timur</p>
+                        </div>
+                    </div>
+
+                    <a href="mailto:solikhinkhin645@gmail.com" class="contact-card">
+                        <div class="icon-box">
+                            <i class="ri-mail-send-line"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>solikhinkhin645@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/6285791587968" target="_blank" class="contact-card">
+                        <div class="icon-box">
+                            <i class="ri-whatsapp-line"></i>
+                        </div>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+62 857-9158-7968</p>
+                        </div>
+                    </a>
+                </div>
+
+                <form class="contact-form fade-in-up delay-1" id="contactForm" action="https://formspree.io/f/mgoqebrn"
+                    method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="form-submit">Kirim Pesan <i
+                            class="ri-send-plane-fill"></i></button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Solikhin<span>.</span></div>
+                <div class="footer-socials">
+                    <a href="https://github.com/solikhin0433" target="_blank" aria-label="GitHub"><i
+                            class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/solikhinkhin/" target="_blank" aria-label="LinkedIn"><i
+                            class="ri-linkedin-fill"></i></a>
+                    <a href="https://wa.me/6285791587968" target="_blank" aria-label="WhatsApp"><i
+                            class="ri-whatsapp-fill"></i></a>
+                    <a href="mailto:solikhinkhin645@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Solikhin. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script>
+        // Inline AJAX Form Submission to prevent browser caching issues
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('form-submit');
+            const status = document.getElementById('form-status');
+
+            if (form) {
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+
+                    submitBtn.disabled = true;
+                    const originalBtnText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = 'Mengirim... <i class="ri-loader-4-line ri-spin"></i>';
+
+                    status.className = 'form-status';
+                    status.style.display = 'none';
+
+                    const formData = new FormData(form);
+
+                    try {
+                        const response = await fetch(form.action, {
+                            method: form.method,
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            status.textContent = 'Terima kasih! Pesan Anda telah berhasil terkirim. Saya akan segera menghubungi Anda.';
+                            status.className = 'form-status success';
+                            form.reset();
+                        } else {
+                            const responseData = await response.json();
+                            if (responseData && responseData.errors) {
+                                status.textContent = responseData.errors.map(err => err.message).join(", ");
+                            } else {
+                                status.textContent = 'Oops! Terjadi masalah saat mengirim pesan Anda. Silakan coba lagi.';
+                            }
+                            status.className = 'form-status error';
+                        }
+                    } catch (error) {
+                        status.textContent = 'Oops! Terjadi kesalahan koneksi. Silakan periksa koneksi Anda.';
+                        status.className = 'form-status error';
+                    } finally {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
