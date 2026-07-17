@@ -164,7 +164,7 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background-color: var(--primary);
     color: #fff;
     box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
 }
