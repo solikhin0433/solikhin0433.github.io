@@ -420,29 +420,26 @@ img {
 
 .image-bg-shape {
     position: absolute;
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    z-index: -1;
-    animation: morph 8s ease-in-out infinite;
-    opacity: 0.2;
+    width: 372px; /* Sedikit lebih besar dari gambar (350px) + border (8px) */
+    height: 372px;
+    background: conic-gradient(from 0deg, transparent 70%, var(--primary) 90%, var(--secondary) 100%);
+    border-radius: 50%;
+    z-index: 0;
+    animation: spin-line 2.5s linear infinite;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: -186px;
+    margin-left: -186px;
+    /* Sedikit blur agar terlihat seperti cahaya (glow) di pinggiran */
+    filter: blur(3px);
 }
 
-@keyframes morph {
+@keyframes spin-line {
     0% {
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        transform: rotate(0deg);
     }
-
-    50% {
-        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
-    }
-
     100% {
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        transform: rotate(360deg);
     }
 }
 
@@ -1119,4 +1116,60 @@ img {
     .btn-block {
         width: 100%;
     }
+}
+
+/* ==========================================================================
+   Background Animation (Glassy Sliding Effect)
+   ========================================================================== */
+/* 1. Pembungkus Utama (Wrapper) */
+.auth-page-wrapper {
+  /* Variabel warna gradient latar belakang */
+  --login-bg-gradient: linear-gradient(-60deg, #f3f9ff 50%, #e6f3ff 50%);
+  
+  /* Pastikan membentang penuh di layar dan mencegah scroll horizontal */
+  min-height: 100vh;
+  position: relative;
+  z-index: 0; /* Creates stacking context so .bg stays inside */
+  overflow-x: hidden; 
+  background-color: #f8fcff;
+}
+
+/* Jika Anda ingin efek mode gelap (dark mode), tambahkan blok ini (opsional) */
+[data-theme="dark"] .auth-page-wrapper {
+  --login-bg-gradient: linear-gradient(-60deg, #1e2227 50%, #262b30 50%);
+  background-color: #1a1d21;
+}
+
+/* 2. Layer Animasi Background (Glassy Sliding Effect) */
+.bg {
+  animation: slide 20s ease-in-out infinite alternate;
+  background-image: var(--login-bg-gradient);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1; /* Z-index negatif agar di bawah konten utama, tapi di atas background wrapper */
+}
+
+/* Layer kedua bergerak dengan arah berlawanan dan lebih cepat */
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 6s;
+}
+
+/* Layer ketiga bergerak dengan durasi sedikit berbeda agar tumpang tindih natural */
+.bg3 {
+  animation-duration: 7s;
+}
+
+/* 3. Definisi Pergerakan Animasi (Keyframes) */
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
 }
