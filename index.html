@@ -23,23 +23,17 @@
 </head>
 
 <body>
-    <div class="auth-page-wrapper">
-        <!-- 2. Layer Animasi Background (Glassy Sliding Effect) -->
-        <div class="bg"></div>
-        <div class="bg bg2"></div>
-        <div class="bg bg3"></div>
-
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
             <div class="container nav-container">
                 <a href="#hero" class="logo">Solikhin<span>.</span></a>
 
                 <ul class="nav-links">
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#education">Education</a></li>
                 </ul>
 
@@ -63,9 +57,9 @@
             <ul class="mobile-nav-links">
                 <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -131,16 +125,12 @@
                         </p>
                         <div class="about-stats">
                             <div class="stat-item">
-                                <h3>5+</h3>
+                                <h3 id="stat-projects">7+</h3>
                                 <p>Projects Completed</p>
                             </div>
                             <div class="stat-item">
-                                <h3>3+</h3>
+                                <h3 id="stat-experience">3+</h3>
                                 <p>Years Experience</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3>8+</h3>
-                                <p>Tech Stacks</p>
                             </div>
                         </div>
                     </div>
@@ -148,8 +138,45 @@
             </div>
         </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="experience section bg-alt">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2>Pengalaman <span>Kerja</span></h2>
+                    <p>Perjalanan karier profesional dan pengalaman magang saya.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item fade-in-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Juli 2025 - Januari 2026</div>
+                            <h3>Full Stack Developer Intern</h3>
+                            <h4>PT. Amerta Indah Otsuka - Pasuruan</h4>
+                            <p>Mengimplementasikan Microfrontend Architecture (MFA) untuk integrasi platform
+                                tersentralisasi, mengembangkan API, meredesain antarmuka pengguna (UI/UX) agar lebih
+                                modern,
+                                dan setup CI/CD untuk otomatisasi deployment perangkat lunak.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in-up delay-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Februari 2025 - Juni 2025</div>
+                            <h3>Backend Developer Intern</h3>
+                            <h4>UPA TIK Politeknik Negeri Malang</h4>
+                            <p>Merancang arsitektur database, mengembangkan API sebagai middleware untuk memastikan
+                                komunikasi data antar sistem yang aman, serta membangun fitur CRUD komprehensif pada
+                                Website Admin PPID, Untuk Mengelola Konten Web PPID Polinema Secara Dinamis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Skills Section -->
-        <section id="skills" class="skills section bg-alt">
+        <section id="skills" class="skills section">
             <div class="container">
                 <div class="section-header fade-in-up">
                     <h2>My <span>Skills</span></h2>
@@ -159,119 +186,36 @@
                 <div class="skills-container">
                     <div class="skill-category fade-in-up">
                         <h3>Frontend & UI</h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>JavaScript</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>TypeScript</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Angular</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Bootstrap</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="85%"></div>
-                                </div>
-                            </div>
+                        <div class="skill-badges">
+                            <span class="badge"><i class="ri-javascript-fill"></i> JavaScript</span>
+                            <span class="badge"><i class="ri-code-box-line"></i> TypeScript</span>
+                            <span class="badge"><i class="ri-angularjs-fill"></i> Angular</span>
+                            <span class="badge"><i class="ri-bootstrap-fill"></i> Bootstrap</span>
+                            <span class="badge"><i class="ri-html5-fill"></i> HTML5 & CSS3</span>
                         </div>
                     </div>
 
                     <div class="skill-category fade-in-up delay-1">
                         <h3>Backend & Database</h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>PHP</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="75%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Laravel</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Express.js</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Java</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>MySQL</span>
-                                    <span>100%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="75%"></div>
-                                </div>
-                            </div>
+                        <div class="skill-badges">
+                            <span class="badge"><i class="ri-code-line"></i> PHP</span>
+                            <span class="badge"><i class="ri-fire-fill"></i> Laravel</span>
+                            <span class="badge"><i class="ri-node-tree"></i> Express.js</span>
+                            <span class="badge"><i class="ri-cup-line"></i> Java</span>
+                            <span class="badge"><i class="ri-database-2-line"></i> MySQL</span>
                         </div>
                     </div>
 
                     <div class="skill-category fade-in-up delay-2">
                         <h3>Mobile & Tools</h3>
-                        <div class="skill-bars">
-                            <div class="skill-bar">
-                                <div class="skill-info">
-                                    <span>Flutter</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="progress-wrap">
-                                    <div class="progress-line" data-width="60%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3 class="mt-4">Tools & DevOps</h3>
                         <div class="skill-badges">
-                            <span class="badge">Git</span>
-                            <span class="badge">GitHub</span>
-                            <span class="badge">GitLab</span>
-                            <span class="badge">CI/CD</span>
-                            <span class="badge">Module Federation</span>
-                            <span class="badge">Node.js</span>
+                            <span class="badge"><i class="ri-flutter-fill"></i> Flutter</span>
+                            <span class="badge"><i class="ri-git-branch-line"></i> Git</span>
+                            <span class="badge"><i class="ri-github-fill"></i> GitHub</span>
+                            <span class="badge"><i class="ri-gitlab-fill"></i> GitLab</span>
+                            <span class="badge"><i class="ri-loop-left-line"></i> CI/CD</span>
+                            <span class="badge"><i class="ri-cpu-line"></i> Module Federation</span>
+                            <span class="badge"><i class="ri-node-tree"></i> Node.js</span>
                         </div>
                     </div>
                 </div>
@@ -290,8 +234,12 @@
                     <!-- Project KhiBOT -->
                     <div class="project-card fade-in-up">
                         <div class="project-image">
-                            <img src="assets/images/Khibot.png"
-                                alt="KhiBOT — Fullstack RAG AI Platform & Embedded Script System">
+                            <div class="project-slider">
+                                <img src="assets/images/Khibot.png"
+                                    alt="KhiBOT — Fullstack RAG AI Platform & Embedded Script System 1">
+                                <img src="assets/images/khibot2.png"
+                                    alt="KhiBOT — Fullstack RAG AI Platform & Embedded Script System 2">
+                            </div>
                             <div class="project-overlay">
                                 <a href="https://www.solikhin.me/login" target="_blank" rel="noopener noreferrer"
                                     class="project-link" aria-label="View Project"><i
@@ -402,8 +350,10 @@
                             <p>Sistem informasi survey kepuasan pelanggan Polinema. Mendukung multi-responden (Dosen,
                                 Mahasiswa, Alumni, dll) dengan Admin panel (PBL).</p>
                             <div class="project-tech">
-                                <span>HTML,CSS,JS</span>
-                                <span>PHP Native</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
                                 <span>MySQL</span>
                             </div>
                         </div>
@@ -448,43 +398,6 @@
                                 <span>Dart</span>
                                 <span>RESTful API</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience section bg-alt">
-            <div class="container">
-                <div class="section-header fade-in-up">
-                    <h2>Pengalaman <span>Kerja</span></h2>
-                    <p>Perjalanan karier profesional dan pengalaman magang saya.</p>
-                </div>
-
-                <div class="timeline">
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">Juli 2025 - Januari 2026</div>
-                            <h3>Full Stack Developer Intern</h3>
-                            <h4>PT. Amerta Indah Otsuka - Pasuruan</h4>
-                            <p>Mengimplementasikan Microfrontend Architecture (MFA) untuk integrasi platform
-                                tersentralisasi, mengembangkan API, meredesain antarmuka pengguna (UI/UX) agar lebih
-                                modern,
-                                dan setup CI/CD untuk otomatisasi deployment perangkat lunak.</p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-item fade-in-up delay-1">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-date">Februari 2025 - Juni 2025</div>
-                            <h3>Backend Developer Intern</h3>
-                            <h4>UPA TIK Politeknik Negeri Malang</h4>
-                            <p>Merancang arsitektur database, mengembangkan API sebagai middleware untuk memastikan
-                                komunikasi data antar sistem yang aman, serta membangun fitur CRUD komprehensif pada
-                                Website Admin PPID, Untuk Mengelola Konten Web PPID Polinema Secara Dinamis.</p>
                         </div>
                     </div>
                 </div>
@@ -664,7 +577,6 @@
             });
         </script>
         <script src="https://www.solikhin.me/embed.js" data-api-key="54d83705-e281-4e8b-9e5d-6955100ae39e"></script>
-    </div>
 </body>
 
 </html>
