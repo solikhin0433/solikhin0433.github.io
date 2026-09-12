@@ -684,24 +684,30 @@ img {
 
 .project-slider {
     display: flex;
-    width: 200%;
+    width: 400%;
     height: 100%;
-    animation: slide-right-left 7s ease-in-out infinite;
+    animation: slide-4-images 16s ease-in-out infinite;
 }
 
 .project-slider img {
-    width: 50% !important;
+    width: 25% !important;
     height: 100%;
     object-fit: cover;
     flex-shrink: 0;
 }
 
-@keyframes slide-right-left {
-    0%, 42% {
+@keyframes slide-4-images {
+    0%, 20% {
         transform: translateX(0);
     }
-    50%, 92% {
+    25%, 45% {
+        transform: translateX(-25%);
+    }
+    50%, 70% {
         transform: translateX(-50%);
+    }
+    75%, 95% {
+        transform: translateX(-75%);
     }
     100% {
         transform: translateX(0);
