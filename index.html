@@ -8,6 +8,12 @@
     <meta name="description"
         content="Portofolio Solikhin, Full-Stack Web Developer berpengalaman dengan Laravel, Express.js, Angular, dan Micro Frontend Architecture.">
 
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.solikhin.me; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self' https://formspree.io https://www.solikhin.me https://cdn.jsdelivr.net; frame-src 'self' https://www.solikhin.me;">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +21,9 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Icons with Subresource Integrity (SRI) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"
+        integrity="sha384-2+8OcleUOxnP/2cYXK9FBoMe12ojS0iPrrJy9Um4ICFk2AXl8iODUaIoUKI6TmGj" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -90,9 +97,9 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
                                 class="ri-download-line"></i></a>
                     </div>
                     <div class="hero-socials">
-                        <a href="https://github.com/solikhin0433" target="_blank" aria-label="GitHub"><i
+                        <a href="https://github.com/solikhin0433" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                                 class="ri-github-fill"></i></a>
-                        <a href="https://www.linkedin.com/in/solikhinkhin/" target="_blank" aria-label="LinkedIn"><i
+                        <a href="https://www.linkedin.com/in/solikhinkhin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
                                 class="ri-linkedin-fill"></i></a>
                         <a href="mailto:solikhink76@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
                     </div>
@@ -504,7 +511,7 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
                             </div>
                         </a>
 
-                        <a href="https://wa.me/6285791587968" target="_blank" class="contact-card">
+                        <a href="https://wa.me/6285791587968" target="_blank" rel="noopener noreferrer" class="contact-card">
                             <div class="icon-box">
                                 <i class="ri-whatsapp-line"></i>
                             </div>
@@ -517,14 +524,19 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
 
                     <form class="contact-form fade-in-up delay-1" id="contactForm"
                         action="https://formspree.io/f/mgoqebrn" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+                        <!-- Anti-Bot Honeypot (Field tersembunyi untuk menangkal spam bot) -->
+                        <div style="display: none !important;" aria-hidden="true">
+                            <label for="_gotcha">Do not fill this field</label>
+                            <input type="text" name="_gotcha" id="_gotcha" tabindex="-1" autocomplete="off">
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email Anda" required>
+                            <input type="text" id="name" name="name" placeholder="Nama Anda" required maxlength="100" autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                            <input type="email" id="email" name="email" placeholder="Email Anda" required maxlength="100" autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required maxlength="2000"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block" id="form-submit">Kirim Pesan <i
                                 class="ri-send-plane-fill"></i></button>
@@ -540,11 +552,11 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
                 <div class="footer-content">
                     <div class="footer-logo">Solikhin<span>.</span></div>
                     <div class="footer-socials">
-                        <a href="https://github.com/solikhin0433" target="_blank" aria-label="GitHub"><i
+                        <a href="https://github.com/solikhin0433" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                                 class="ri-github-fill"></i></a>
-                        <a href="https://www.linkedin.com/in/solikhinkhin/" target="_blank" aria-label="LinkedIn"><i
+                        <a href="https://www.linkedin.com/in/solikhinkhin/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
                                 class="ri-linkedin-fill"></i></a>
-                        <a href="https://wa.me/6285791587968" target="_blank" aria-label="WhatsApp"><i
+                        <a href="https://wa.me/6285791587968" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
                                 class="ri-whatsapp-fill"></i></a>
                         <a href="mailto:solikhink76@gmail.com" aria-label="Email"><i class="ri-mail-fill"></i></a>
                     </div>
@@ -555,11 +567,13 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
             </div>
         </footer>
 
-        <!-- Script -->
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <!-- Script with Subresource Integrity (SRI) -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"
+            integrity="sha384-NMn9+T8zIKnDUstqb5le7vdLNSyAgSU9DtEPT/b7ks9NJQpPk4Dc9b1tI8oyzimc"
+            crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <script>
-            // Inline AJAX Form Submission to prevent browser caching issues
+            // Inline AJAX Form Submission with Security & Anti-Spam protection
             document.addEventListener('DOMContentLoaded', () => {
                 const form = document.getElementById('contactForm');
                 const submitBtn = document.getElementById('form-submit');
@@ -569,6 +583,17 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
                     form.addEventListener('submit', async (e) => {
                         e.preventDefault();
 
+                        // 1. Client-side Rate Limiting (Cooldown 30 detik untuk mencegah flooding / DDoS spam)
+                        const lastSubmitTime = localStorage.getItem('last_form_submission');
+                        const now = Date.now();
+                        if (lastSubmitTime && (now - parseInt(lastSubmitTime, 10)) < 30000) {
+                            const remainingSeconds = Math.ceil((30000 - (now - parseInt(lastSubmitTime, 10))) / 1000);
+                            status.textContent = `Mohon tunggu ${remainingSeconds} detik sebelum mengirim pesan lagi untuk mencegah spam.`;
+                            status.className = 'form-status error';
+                            status.style.display = 'block';
+                            return;
+                        }
+
                         submitBtn.disabled = true;
                         const originalBtnText = submitBtn.innerHTML;
                         submitBtn.innerHTML = 'Mengirim... <i class="ri-loader-4-line ri-spin"></i>';
@@ -577,6 +602,42 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
                         status.style.display = 'none';
 
                         const formData = new FormData(form);
+
+                        // 2. Honeypot check: Jika kolom tersembunyi terisi, dipastikan itu adalah bot otomatis
+                        const gotcha = formData.get('_gotcha');
+                        if (gotcha) {
+                            // Drop bot submission secara senyap tanpa memakan kuota Formspree
+                            status.textContent = 'Terima kasih! Pesan Anda telah berhasil terkirim. Saya akan segera menghubungi Anda.';
+                            status.className = 'form-status success';
+                            status.style.display = 'block';
+                            form.reset();
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnText;
+                            return;
+                        }
+
+                        // 3. Validasi & sanitasi input
+                        const name = (formData.get('name') || '').toString().trim();
+                        const email = (formData.get('email') || '').toString().trim();
+                        const message = (formData.get('message') || '').toString().trim();
+
+                        if (!name || !email || !message) {
+                            status.textContent = 'Semua kolom wajib diisi dengan benar.';
+                            status.className = 'form-status error';
+                            status.style.display = 'block';
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnText;
+                            return;
+                        }
+
+                        if (name.length > 100 || email.length > 100 || message.length > 2000) {
+                            status.textContent = 'Panjang input melebihi batas wajar yang diperbolehkan.';
+                            status.className = 'form-status error';
+                            status.style.display = 'block';
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnText;
+                            return;
+                        }
 
                         try {
                             const response = await fetch(form.action, {
@@ -588,8 +649,10 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
                             });
 
                             if (response.ok) {
+                                localStorage.setItem('last_form_submission', Date.now().toString());
                                 status.textContent = 'Terima kasih! Pesan Anda telah berhasil terkirim. Saya akan segera menghubungi Anda.';
                                 status.className = 'form-status success';
+                                status.style.display = 'block';
                                 form.reset();
                             } else {
                                 const responseData = await response.json();
@@ -599,10 +662,12 @@ Saya berkomitmen untuk terus belajar, beradaptasi, dan berkontribusi dalam tim.
                                     status.textContent = 'Oops! Terjadi masalah saat mengirim pesan Anda. Silakan coba lagi.';
                                 }
                                 status.className = 'form-status error';
+                                status.style.display = 'block';
                             }
                         } catch (error) {
                             status.textContent = 'Oops! Terjadi kesalahan koneksi. Silakan periksa koneksi Anda.';
                             status.className = 'form-status error';
+                            status.style.display = 'block';
                         } finally {
                             submitBtn.disabled = false;
                             submitBtn.innerHTML = originalBtnText;
